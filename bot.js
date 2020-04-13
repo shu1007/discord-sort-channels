@@ -7,15 +7,7 @@ const sortChannels = async (channelArray, isDesc) => {
   channelArray.sort((a, b) => (a.name >= b.name ? hoge : -hoge));
   for (let i = 0; i < channelArray.length; i++) {
     const ch = channelArray[i];
-    console.log(`${ch.name}, position:${ch.position}, i:${i}`);
-    if (ch.position !== i)
-      await ch
-        .setPosition(i)
-        .then((newChannel) =>
-          console.log(
-            `${newChannel.name} new position is ${newChannel.position}`
-          )
-        );
+    if (ch.position !== i) await ch.setPosition(i).catch(console.error);
   }
 };
 
