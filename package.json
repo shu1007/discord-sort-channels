@@ -1,0 +1,16 @@
+{
+  "name": "discord-sort-channels",
+  "version": "0.0.1",
+  "description": "Sort channels in specified category.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node ./bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shu1007",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.1.1",
+    "dotenv": "^8.2.0"
+  }
+}
